@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/Profile.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">AVS</div>
+        <ul class="links">
+            <li><a href="/" class="links">Home</a></li>
+            <li><a href="/auth/register" class="links">Register</a></li>
+            <li><a href="/auth/login" class="links">Login</a></li>
+        </ul>
+    </nav>
+<div class="loginOuter">
+    <div class="login">
+        <div class="logonLogo">Home</div>
+        <div class="form">
+            <h2>Role-Based Authentication Website</h2>
+
+            <ol>
+                <li>
+                    <strong>Dependencies and Environment Configuration:</strong>
+                    <ul>
+                        <li>Used <code>dotenv</code> to manage environment variables securely.</li>
+                        <li>Stored sensitive information like database connection strings, API keys, and session secrets in a
+                            <code>.env</code> file.</li>
+                        <li>Loaded environment variables using <code>dotenv</code> for secure configuration.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Template Engine - EJS:</strong>
+                    <ul>
+                        <li>Utilized <code>ejs</code> (Embedded JavaScript) as the template engine for rendering dynamic
+                            content on the server side.</li>
+                        <li>Created modular EJS templates for components like headers, footers, and authentication forms.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Express Framework:</strong>
+                    <ul>
+                        <li>Leveraged the <code>express</code> framework for building a robust and scalable web application.</li>
+                        <li>Set up middleware for parsing incoming requests and handling responses.</li>
+                        <li>Implemented routing to handle different endpoints and HTTP methods.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>HTTP Errors Handling - http-errors:</strong>
+                    <ul>
+                        <li>Incorporated the <code>http-errors</code> library for handling HTTP errors in a structured and
+                            standardized manner.</li>
+                        <li>Created custom error pages for common HTTP status codes, enhancing user experience.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>MongoDB and Mongoose:</strong>
+                    <ul>
+                        <li>Chose <code>mongoose</code> as the ODM (Object-Document Mapper) for MongoDB, simplifying interactions
+                            with the database.</li>
+                        <li>Defined Mongoose models for user data, including fields for authentication details and user roles.</li>
+                        <li>Implemented CRUD operations to manage user data and roles in the MongoDB database.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Authentication and Authorization:</strong>
+                    <ul>
+                        <li>Integrated user authentication using techniques like session-based authentication or JSON Web Tokens
+                            (JWT).</li>
+                        <li>Implemented role-based access control to restrict access to certain routes or functionalities based
+                            on user roles.</li>
+                        <li>Created middleware functions for route protection and authorization checks.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>User Registration and Profile Management:</strong>
+                    <ul>
+                        <li>Developed user registration functionality with validation for email uniqueness, password strength,
+                            etc.</li>
+                        <li>Enabled users to update their profiles, including features like changing passwords and updating
+                            personal information.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Session Management:</strong>
+                    <ul>
+                        <li>Managed user sessions securely, possibly using express-session middleware.</li>
+                        <li>Implemented features like session expiration, logout functionality, and secure session storage.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Security Measures:</strong>
+                    <ul>
+                        <li>Employed best practices for security, including input validation, password hashing, and protection
+                            against common web vulnerabilities (e.g., Cross-Site Scripting and Cross-Site Request Forgery).</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Error Logging and Monitoring:</strong>
+                    <ul>
+                        <li>Integrated logging mechanisms to capture and log errors for monitoring and debugging purposes.</li>
+                        <li>Utilized tools or services for real-time monitoring of the application's performance and error
+                            tracking.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Deployment and Environment Setup:</strong>
+                    <ul>
+                        <li>Configured the application for different environments (development, production) to manage variables,
+                            settings, and optimizations accordingly.</li>
+                        <li>Prepared the application for deployment on platforms like Heroku, AWS, or others, considering
+                            scalability and performance.</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <strong>Documentation:</strong>
+                    <ul>
+                        <li>Provided clear and concise documentation for developers, outlining the project structure,
+                            dependencies, and instructions for local setup and deployment.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
