@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/Register.css">
+    <script src="/js/registerButton.js"></script>
+   
+
     <title>Login</title>
 </head>
 
@@ -17,6 +20,9 @@
             <li><a href="/auth/login" class="links">Login</a></li>
         </ul>
     </nav>
+    <% if (locals.Message) { %>
+        <p style="color: pink;">Hello World</p>
+    <% } %>
 <div class="loginOuter">
     <div class="login">
         <div class="logonLogo">Register</div>
@@ -27,12 +33,12 @@
          <div>  <input type="text" class="passwordInput"></div> 
          <div class="password">Confirm Password</div>
          <div>  <input type="text" class="passwordInput"></div> 
-            <button class="button">Register</button>
+            <button class="button" onclick="register()">Register</button>
         </div>
         <div class="register">Already have an account? <a href="/auth/login" class="reg">Login</a></div>
     </div>
+    
 </div>
-
 
 
 </body>
